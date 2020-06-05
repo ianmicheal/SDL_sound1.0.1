@@ -1,0 +1,521 @@
+# Makefile.in generated automatically by automake 1.5 from Makefile.am.
+
+# Copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001
+# Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+@SET_MAKE@
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+top_builddir = ../..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+INSTALL_HEADER = $(INSTALL_DATA)
+transform = @program_transform_name@
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+host_alias = @host_alias@
+host_triplet = @host@
+AMTAR = @AMTAR@
+AS = @AS@
+AWK = @AWK@
+BINARY_AGE = @BINARY_AGE@
+CC = @CC@
+DEPDIR = @DEPDIR@
+DLLTOOL = @DLLTOOL@
+ECHO = @ECHO@
+EXEEXT = @EXEEXT@
+INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+INTERFACE_AGE = @INTERFACE_AGE@
+LIBMIKMOD_CFLAGS = @LIBMIKMOD_CFLAGS@
+LIBMIKMOD_CONFIG = @LIBMIKMOD_CONFIG@
+LIBMIKMOD_LDADD = @LIBMIKMOD_LDADD@
+LIBMIKMOD_LIBS = @LIBMIKMOD_LIBS@
+LIBTOOL = @LIBTOOL@
+LN_S = @LN_S@
+LT_AGE = @LT_AGE@
+LT_CURRENT = @LT_CURRENT@
+LT_RELEASE = @LT_RELEASE@
+LT_REVISION = @LT_REVISION@
+MAJOR_VERSION = @MAJOR_VERSION@
+MICRO_VERSION = @MICRO_VERSION@
+MINOR_VERSION = @MINOR_VERSION@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+RANLIB = @RANLIB@
+SDL_CFLAGS = @SDL_CFLAGS@
+SDL_CONFIG = @SDL_CONFIG@
+SDL_LIBS = @SDL_LIBS@
+SMPEG_CFLAGS = @SMPEG_CFLAGS@
+SMPEG_CONFIG = @SMPEG_CONFIG@
+SMPEG_LIBS = @SMPEG_LIBS@
+STRIP = @STRIP@
+VERSION = @VERSION@
+VORBISENC_LIBS = @VORBISENC_LIBS@
+VORBISFILE_LIBS = @VORBISFILE_LIBS@
+VORBIS_CFLAGS = @VORBIS_CFLAGS@
+VORBIS_LIBS = @VORBIS_LIBS@
+am__include = @am__include@
+am__quote = @am__quote@
+install_sh = @install_sh@
+
+noinst_LTLIBRARIES = libmpglib.la
+
+INCLUDES = -I$(top_srcdir)
+libmpglib_la_CFLAGS = -DLAYER1 -DLAYER2 -DLAYER3
+
+@USE_MPGLIB_TRUE@libmpglib_la_SOURCES = \
+@USE_MPGLIB_TRUE@	mpglib_common.c     \
+@USE_MPGLIB_TRUE@	huffman.h           \
+@USE_MPGLIB_TRUE@	layer1.c            \
+@USE_MPGLIB_TRUE@	tabinit.c           \
+@USE_MPGLIB_TRUE@	dct64_i386.c        \
+@USE_MPGLIB_TRUE@	interface.c         \
+@USE_MPGLIB_TRUE@	layer2.c            \
+@USE_MPGLIB_TRUE@	mpg123_sdlsound.h   \
+@USE_MPGLIB_TRUE@	decode_i386.c       \
+@USE_MPGLIB_TRUE@	l2tables.h          \
+@USE_MPGLIB_TRUE@	layer3.c            \
+@USE_MPGLIB_TRUE@	mpglib_sdlsound.h
+
+@USE_MPGLIB_FALSE@libmpglib_la_SOURCES = 
+subdir = decoders/mpglib
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+CONFIG_HEADER = $(top_builddir)/config.h
+CONFIG_CLEAN_FILES =
+LTLIBRARIES = $(noinst_LTLIBRARIES)
+
+libmpglib_la_LDFLAGS =
+libmpglib_la_LIBADD =
+@USE_MPGLIB_TRUE@am_libmpglib_la_OBJECTS = libmpglib_la-mpglib_common.lo \
+@USE_MPGLIB_TRUE@	libmpglib_la-layer1.lo libmpglib_la-tabinit.lo \
+@USE_MPGLIB_TRUE@	libmpglib_la-dct64_i386.lo \
+@USE_MPGLIB_TRUE@	libmpglib_la-interface.lo \
+@USE_MPGLIB_TRUE@	libmpglib_la-layer2.lo \
+@USE_MPGLIB_TRUE@	libmpglib_la-decode_i386.lo \
+@USE_MPGLIB_TRUE@	libmpglib_la-layer3.lo
+@USE_MPGLIB_FALSE@am_libmpglib_la_OBJECTS =
+libmpglib_la_OBJECTS = $(am_libmpglib_la_OBJECTS)
+
+DEFS = @DEFS@
+DEFAULT_INCLUDES =  -I. -I$(srcdir) -I$(top_builddir)
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+depcomp = $(SHELL) $(top_srcdir)/depcomp
+@AMDEP_TRUE@DEP_FILES = $(DEPDIR)/libmpglib_la-dct64_i386.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/libmpglib_la-decode_i386.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/libmpglib_la-interface.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/libmpglib_la-layer1.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/libmpglib_la-layer2.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/libmpglib_la-layer3.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/libmpglib_la-mpglib_common.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/libmpglib_la-tabinit.Plo
+COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
+	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) \
+	$(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+CCLD = $(CC)
+LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+	$(AM_LDFLAGS) $(LDFLAGS) -o $@
+CFLAGS = @CFLAGS@
+DIST_SOURCES = $(libmpglib_la_SOURCES)
+DIST_COMMON = README Makefile.am Makefile.in TODO
+SOURCES = $(libmpglib_la_SOURCES)
+
+all: all-am
+
+.SUFFIXES:
+.SUFFIXES: .c .lo .o .obj
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+	-rm -f libtool
+$(srcdir)/Makefile.in:  Makefile.am  $(top_srcdir)/configure.in $(ACLOCAL_M4)
+	cd $(top_srcdir) && \
+	  $(AUTOMAKE) --foreign  decoders/mpglib/Makefile
+Makefile:  $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) && \
+	  CONFIG_HEADERS= CONFIG_LINKS= \
+	  CONFIG_FILES=$(subdir)/$@ $(SHELL) ./config.status
+
+clean-noinstLTLIBRARIES:
+	-test -z "$(noinst_LTLIBRARIES)" || rm -f $(noinst_LTLIBRARIES)
+libmpglib_la-mpglib_common.lo: mpglib_common.c
+libmpglib_la-layer1.lo: layer1.c
+libmpglib_la-tabinit.lo: tabinit.c
+libmpglib_la-dct64_i386.lo: dct64_i386.c
+libmpglib_la-interface.lo: interface.c
+libmpglib_la-layer2.lo: layer2.c
+libmpglib_la-decode_i386.lo: decode_i386.c
+libmpglib_la-layer3.lo: layer3.c
+libmpglib.la: $(libmpglib_la_OBJECTS) $(libmpglib_la_DEPENDENCIES) 
+	$(LINK)  $(libmpglib_la_LDFLAGS) $(libmpglib_la_OBJECTS) $(libmpglib_la_LIBADD) $(LIBS)
+
+mostlyclean-compile:
+	-rm -f *.$(OBJEXT) core *.core
+
+distclean-compile:
+	-rm -f *.tab.c
+
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libmpglib_la-dct64_i386.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libmpglib_la-decode_i386.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libmpglib_la-interface.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libmpglib_la-layer1.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libmpglib_la-layer2.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libmpglib_la-layer3.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libmpglib_la-mpglib_common.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libmpglib_la-tabinit.Plo@am__quote@
+
+distclean-depend:
+	-rm -rf $(DEPDIR)
+
+.c.o:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Po' tmpdepfile='$(DEPDIR)/$*.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(COMPILE) -c `test -f $< || echo '$(srcdir)/'`$<
+
+.c.obj:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Po' tmpdepfile='$(DEPDIR)/$*.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(COMPILE) -c `cygpath -w $<`
+
+.c.lo:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Plo' tmpdepfile='$(DEPDIR)/$*.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LTCOMPILE) -c -o $@ `test -f $< || echo '$(srcdir)/'`$<
+
+libmpglib_la-mpglib_common.o: mpglib_common.c
+@AMDEP_TRUE@	source='mpglib_common.c' object='libmpglib_la-mpglib_common.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-mpglib_common.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-mpglib_common.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-mpglib_common.o `test -f mpglib_common.c || echo '$(srcdir)/'`mpglib_common.c
+
+libmpglib_la-mpglib_common.obj: mpglib_common.c
+@AMDEP_TRUE@	source='mpglib_common.c' object='libmpglib_la-mpglib_common.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-mpglib_common.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-mpglib_common.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-mpglib_common.obj `cygpath -w mpglib_common.c`
+
+libmpglib_la-mpglib_common.lo: mpglib_common.c
+@AMDEP_TRUE@	source='mpglib_common.c' object='libmpglib_la-mpglib_common.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-mpglib_common.Plo' tmpdepfile='$(DEPDIR)/libmpglib_la-mpglib_common.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-mpglib_common.lo `test -f mpglib_common.c || echo '$(srcdir)/'`mpglib_common.c
+
+libmpglib_la-layer1.o: layer1.c
+@AMDEP_TRUE@	source='layer1.c' object='libmpglib_la-layer1.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-layer1.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-layer1.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-layer1.o `test -f layer1.c || echo '$(srcdir)/'`layer1.c
+
+libmpglib_la-layer1.obj: layer1.c
+@AMDEP_TRUE@	source='layer1.c' object='libmpglib_la-layer1.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-layer1.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-layer1.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-layer1.obj `cygpath -w layer1.c`
+
+libmpglib_la-layer1.lo: layer1.c
+@AMDEP_TRUE@	source='layer1.c' object='libmpglib_la-layer1.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-layer1.Plo' tmpdepfile='$(DEPDIR)/libmpglib_la-layer1.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-layer1.lo `test -f layer1.c || echo '$(srcdir)/'`layer1.c
+
+libmpglib_la-tabinit.o: tabinit.c
+@AMDEP_TRUE@	source='tabinit.c' object='libmpglib_la-tabinit.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-tabinit.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-tabinit.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-tabinit.o `test -f tabinit.c || echo '$(srcdir)/'`tabinit.c
+
+libmpglib_la-tabinit.obj: tabinit.c
+@AMDEP_TRUE@	source='tabinit.c' object='libmpglib_la-tabinit.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-tabinit.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-tabinit.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-tabinit.obj `cygpath -w tabinit.c`
+
+libmpglib_la-tabinit.lo: tabinit.c
+@AMDEP_TRUE@	source='tabinit.c' object='libmpglib_la-tabinit.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-tabinit.Plo' tmpdepfile='$(DEPDIR)/libmpglib_la-tabinit.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-tabinit.lo `test -f tabinit.c || echo '$(srcdir)/'`tabinit.c
+
+libmpglib_la-dct64_i386.o: dct64_i386.c
+@AMDEP_TRUE@	source='dct64_i386.c' object='libmpglib_la-dct64_i386.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-dct64_i386.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-dct64_i386.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-dct64_i386.o `test -f dct64_i386.c || echo '$(srcdir)/'`dct64_i386.c
+
+libmpglib_la-dct64_i386.obj: dct64_i386.c
+@AMDEP_TRUE@	source='dct64_i386.c' object='libmpglib_la-dct64_i386.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-dct64_i386.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-dct64_i386.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-dct64_i386.obj `cygpath -w dct64_i386.c`
+
+libmpglib_la-dct64_i386.lo: dct64_i386.c
+@AMDEP_TRUE@	source='dct64_i386.c' object='libmpglib_la-dct64_i386.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-dct64_i386.Plo' tmpdepfile='$(DEPDIR)/libmpglib_la-dct64_i386.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-dct64_i386.lo `test -f dct64_i386.c || echo '$(srcdir)/'`dct64_i386.c
+
+libmpglib_la-interface.o: interface.c
+@AMDEP_TRUE@	source='interface.c' object='libmpglib_la-interface.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-interface.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-interface.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-interface.o `test -f interface.c || echo '$(srcdir)/'`interface.c
+
+libmpglib_la-interface.obj: interface.c
+@AMDEP_TRUE@	source='interface.c' object='libmpglib_la-interface.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-interface.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-interface.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-interface.obj `cygpath -w interface.c`
+
+libmpglib_la-interface.lo: interface.c
+@AMDEP_TRUE@	source='interface.c' object='libmpglib_la-interface.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-interface.Plo' tmpdepfile='$(DEPDIR)/libmpglib_la-interface.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-interface.lo `test -f interface.c || echo '$(srcdir)/'`interface.c
+
+libmpglib_la-layer2.o: layer2.c
+@AMDEP_TRUE@	source='layer2.c' object='libmpglib_la-layer2.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-layer2.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-layer2.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-layer2.o `test -f layer2.c || echo '$(srcdir)/'`layer2.c
+
+libmpglib_la-layer2.obj: layer2.c
+@AMDEP_TRUE@	source='layer2.c' object='libmpglib_la-layer2.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-layer2.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-layer2.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-layer2.obj `cygpath -w layer2.c`
+
+libmpglib_la-layer2.lo: layer2.c
+@AMDEP_TRUE@	source='layer2.c' object='libmpglib_la-layer2.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-layer2.Plo' tmpdepfile='$(DEPDIR)/libmpglib_la-layer2.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-layer2.lo `test -f layer2.c || echo '$(srcdir)/'`layer2.c
+
+libmpglib_la-decode_i386.o: decode_i386.c
+@AMDEP_TRUE@	source='decode_i386.c' object='libmpglib_la-decode_i386.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-decode_i386.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-decode_i386.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-decode_i386.o `test -f decode_i386.c || echo '$(srcdir)/'`decode_i386.c
+
+libmpglib_la-decode_i386.obj: decode_i386.c
+@AMDEP_TRUE@	source='decode_i386.c' object='libmpglib_la-decode_i386.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-decode_i386.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-decode_i386.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-decode_i386.obj `cygpath -w decode_i386.c`
+
+libmpglib_la-decode_i386.lo: decode_i386.c
+@AMDEP_TRUE@	source='decode_i386.c' object='libmpglib_la-decode_i386.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-decode_i386.Plo' tmpdepfile='$(DEPDIR)/libmpglib_la-decode_i386.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-decode_i386.lo `test -f decode_i386.c || echo '$(srcdir)/'`decode_i386.c
+
+libmpglib_la-layer3.o: layer3.c
+@AMDEP_TRUE@	source='layer3.c' object='libmpglib_la-layer3.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-layer3.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-layer3.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-layer3.o `test -f layer3.c || echo '$(srcdir)/'`layer3.c
+
+libmpglib_la-layer3.obj: layer3.c
+@AMDEP_TRUE@	source='layer3.c' object='libmpglib_la-layer3.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-layer3.Po' tmpdepfile='$(DEPDIR)/libmpglib_la-layer3.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-layer3.obj `cygpath -w layer3.c`
+
+libmpglib_la-layer3.lo: layer3.c
+@AMDEP_TRUE@	source='layer3.c' object='libmpglib_la-layer3.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libmpglib_la-layer3.Plo' tmpdepfile='$(DEPDIR)/libmpglib_la-layer3.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmpglib_la_CFLAGS) $(CFLAGS) -c -o libmpglib_la-layer3.lo `test -f layer3.c || echo '$(srcdir)/'`layer3.c
+CCDEPMODE = @CCDEPMODE@
+uninstall-info-am:
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	mkid -fID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) \
+		$(TAGS_FILES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || etags $(ETAGS_ARGS) $$tags  $$unique $(LISP)
+
+GTAGS:
+	here=`CDPATH=: && cd $(top_builddir) && pwd` \
+	  && cd $(top_srcdir) \
+	  && gtags -i $(GTAGS_ARGS) $$here
+
+distclean-tags:
+	-rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH
+
+DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+
+top_distdir = ../..
+distdir = $(top_distdir)/$(PACKAGE)-$(VERSION)
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  if test -f $$file; then d=.; else d=$(srcdir); fi; \
+	  dir=`echo "$$file" | sed -e 's,/[^/]*$$,,'`; \
+	  if test "$$dir" != "$$file" && test "$$dir" != "."; then \
+	    $(mkinstalldirs) "$(distdir)/$$dir"; \
+	  fi; \
+	  if test -d $$d/$$file; then \
+	    cp -pR $$d/$$file $(distdir) \
+	    || exit 1; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || cp -p $$d/$$file $(distdir)/$$file \
+	    || exit 1; \
+	  fi; \
+	done
+check-am: all-am
+check: check-am
+all-am: Makefile $(LTLIBRARIES)
+
+installdirs:
+
+install: install-am
+install-exec: install-exec-am
+install-data: install-data-am
+uninstall: uninstall-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+
+installcheck: installcheck-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
+	  `test -z '$(STRIP)' || \
+	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES) stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+	@echo "This command is intended for maintainers to use"
+	@echo "it deletes files that may require special tools to rebuild."
+clean: clean-am
+
+clean-am: clean-generic clean-libtool clean-noinstLTLIBRARIES \
+	mostlyclean-am
+
+distclean: distclean-am
+
+distclean-am: clean-am distclean-compile distclean-depend \
+	distclean-generic distclean-libtool distclean-tags
+
+dvi: dvi-am
+
+dvi-am:
+
+info: info-am
+
+info-am:
+
+install-data-am:
+
+install-exec-am:
+
+install-info: install-info-am
+
+install-man:
+
+installcheck-am:
+
+maintainer-clean: maintainer-clean-am
+
+maintainer-clean-am: distclean-am maintainer-clean-generic
+
+mostlyclean: mostlyclean-am
+
+mostlyclean-am: mostlyclean-compile mostlyclean-generic \
+	mostlyclean-libtool
+
+uninstall-am: uninstall-info-am
+
+.PHONY: GTAGS all all-am check check-am clean clean-generic \
+	clean-libtool clean-noinstLTLIBRARIES distclean \
+	distclean-compile distclean-depend distclean-generic \
+	distclean-libtool distclean-tags distdir dvi dvi-am info \
+	info-am install install-am install-data install-data-am \
+	install-exec install-exec-am install-info install-info-am \
+	install-man install-strip installcheck installcheck-am \
+	installdirs maintainer-clean maintainer-clean-generic \
+	mostlyclean mostlyclean-compile mostlyclean-generic \
+	mostlyclean-libtool tags uninstall uninstall-am \
+	uninstall-info-am
+
+
+#EXTRA_DIST = FAQ README CHANGES TODO
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
